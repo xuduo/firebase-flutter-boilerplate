@@ -11,9 +11,9 @@ import 'package:model/providers/auth_provider.dart';
 import 'package:model/util/provider.dart';
 import 'package:provider/provider.dart';
 
-import 'src/authentication.dart';
-import 'src/widgets.dart';
-import 'yes_no_selection.dart';
+import '../widgets/authentication.dart';
+import '../widgets/widgets.dart';
+import '../widgets/yes_no_selection.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

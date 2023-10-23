@@ -5,7 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:model/providers/app_state.dart';
 
-import 'src/widgets.dart';
+import 'widgets.dart';
 
 class YesNoSelection extends StatelessWidget {
   const YesNoSelection({

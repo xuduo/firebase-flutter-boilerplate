@@ -3,3 +3,4 @@ based on https://github.com/flutter/codelabs/tree/main/firebase-get-to-know-flut
 2. more flattened architecture, call the providers from the UI like sending messages from the OnPress of the button
 3. add analytics, a/b testing
 4. util for logging
+5. android splash screen before app loads

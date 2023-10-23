@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:model/providers/guest_book_provider.dart';
 import 'package:model/util/logger.dart';
 import 'package:model/util/provider.dart';
+import 'package:ui/widgets/widgets.dart';
 
-import '../src/widgets.dart';
 import 'guest_book_list_view.dart';
 
 

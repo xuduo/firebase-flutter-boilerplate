@@ -7,15 +7,13 @@ import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gtk_flutter/scaffolds/guest_book.dart';
 import 'package:model/config/firebase_options.dart';
 import 'package:model/providers/app_state.dart';
 import 'package:model/providers/auth_provider.dart';
 import 'package:model/util/provider.dart';
 import 'package:provider/provider.dart';
-
-import 'widgets/guest_book.dart';
-import 'home_page.dart';
+import 'package:ui/scaffolds/guest_book.dart';
+import 'package:ui/scaffolds/home_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,6 +21,7 @@ Future<void> main() async {
   await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform);
   // add all the providers you need in the whole life cycle
+
   runApp(MultiProvider(
     providers:  [
       ChangeNotifierProvider(
