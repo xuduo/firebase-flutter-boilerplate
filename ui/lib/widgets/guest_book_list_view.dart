@@ -20,7 +20,7 @@ class GuestBookListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<GuestBookProvider>(
       builder: (context, provider, child) {
-        WidgetsBinding.instance!.addPostFrameCallback((_) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
           _scrollToBottom();
         });
         return ListView.builder(

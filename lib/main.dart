@@ -11,15 +11,19 @@ import 'package:model/config/firebase_options.dart';
 import 'package:model/providers/app_state.dart';
 import 'package:model/providers/auth_provider.dart';
 import 'package:model/util/provider.dart';
+import 'package:model/db/objectbox.dart';
 import 'package:provider/provider.dart';
 import 'package:ui/scaffolds/guest_book.dart';
 import 'package:ui/scaffolds/home_page.dart';
+import 'package:ui/scaffolds/weather_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform);
+  await Future.wait([
+    createObjectBox(),
+    Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform),
+  ]);
   // add all the providers you need in the whole life cycle
 
   runApp(MultiProvider(
@@ -126,6 +130,12 @@ final _router = GoRouter(
           path: 'guestBook',
           builder: (context, state) {
             return const GuestBookScaffold();
+          },
+        ),
+        GoRoute(
+          path: 'weather',
+          builder: (context, state) {
+            return const WeatherScaffold();
           },
         ),
       ],

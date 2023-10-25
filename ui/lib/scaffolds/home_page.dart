@@ -76,6 +76,13 @@ class HomePage extends StatelessWidget {
                         }, child: const Text('GuestBook'),)
                   ),
                 ],
+                Padding(
+                    padding: const EdgeInsets.only(left: 24, bottom: 8),
+                    child: StyledButton(
+                      onPressed: () {
+                        context.push('/weather');
+                      }, child: const Text('Weather with Loading & Errors'),)
+                ),
               ],
             ),
           ),

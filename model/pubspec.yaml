@@ -16,8 +16,13 @@ dependencies:
   firebase_core: ^2.15.1
   firebase_analytics: ^10.6.1
   provider: ^6.0.5
+  objectbox: ^2.3.1
+  objectbox_flutter_libs: ^2.3.1
+  path_provider: ^2.1.1
   firebase_ui_auth: ^1.8.0
 
 dev_dependencies:
   lints: ^2.0.0
   test: ^1.21.0
+  objectbox_generator: ^2.3.1  # check for the latest version
+  build_runner: ^2.4.6
